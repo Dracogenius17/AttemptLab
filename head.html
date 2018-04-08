@@ -1,0 +1,64 @@
+<div id="head">
+    <div id="header">
+        <a href="homepage.html"><img src="brain.svg"/></a> 
+        <h1>Attempt Lab</h1>
+        <h4>Maximilian Fritz' Website</h4>
+        <div class="clear"></div>
+    </div>
+    
+    <div id="menu">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <button onclick="sidebar()" id="sidebar-button">
+                Work in Progress <br> (Hopefully)
+                </button>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <div id="sidebar" style="display: none">
+        <ul>
+            <li> </li>
+            
+        </ul>
+    </div>
+  
+    <footer>
+    
+    <!--<p>loading time: <span id="timing"> </span> s </p>-->
+    <p> Maximilian Fritz' Website </p>
+    
+    <p> Copyright © 2018 Maximilian Fritz. <br> All rights reserved. </p>
+    <p> Email: <a href="mailto:maximilian-f-98@web.de"> maximilian-f-98@web.de </a></p>
+    </footer>
+    
+</div>
+
+<script>
+    var show = false;
+    function sidebar() {
+        if (show) {                
+            document.getElementById("sidebar").style.display = "none";
+            show = false;
+        } else {
+            document.getElementById("sidebar").style.display = "block";
+            show = true;
+        }
+    }
+</script>
+<!--
+<script>
+    (function(){
+        const t = window.performance && performance.timing;
+        if (!t) {
+          return;
+        }
+        const loadTime = (t.loadEventEnd - t.navigationStart) / 1000;
+        $("#timing").text(loadTime.toString())
+    })();
+
+</script>
+-->
